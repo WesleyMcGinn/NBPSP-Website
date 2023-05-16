@@ -1,0 +1,19 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <g>
+        <ellipse cx="128" cy="138" fill-opacity="0" rx="27.79154" ry="130" stroke="#0000ff" stroke-width="5"/>
+        <ellipse cx="115" cy="128" fill-opacity="0" rx="25" ry="120" stroke="#0000ff" stroke-width="5" transform="matrix(0.555831 0.938194 -0.962727 0.541667 187.309 -39.2257)"/>
+        <ellipse cx="115" cy="128" fill-opacity="0" rx="25" ry="120" stroke="#0000ff" stroke-width="5" transform="matrix(-0.555831 0.938194 -0.962727 -0.541667 315.15 99.441)"/>
+        <circle cx="128.00001" cy="138" fill="#ffb200" r="8.77" stroke="#ffb200" stroke-width="8"/>
+    </g>
+    <g>
+        <line fill="none" stroke="#7f7f7f" stroke-width="10" transform="rotate(-32.7619 95.4205 374.694)" x1="88.60321" x2="102.23786" y1="361.87425" y2="387.514"/>
+        <line fill="none" stroke="#7f7f7f" stroke-width="12" transform="rotate(-32.7619 106.938 365.105)" x1="117.47342" x2="96.40168" y1="349.23268" y2="380.97714"/>
+        <line fill="none" stroke="#7f7f7f" stroke-width="12" transform="rotate(-32.7619 323.884 226.949)" x1="315.20727" x2="332.56047" y1="212.29725" y2="241.59982"/>
+        <line fill="none" stroke="#7f7f7f" stroke-width="10" transform="rotate(-32.7619 337.243 219.077)" x1="341.58175" x2="332.90516" y1="207.47842" y2="230.67629"/>
+        <circle cx="111.25488" cy="385.55703" fill="#0000bf" r="10" stroke="#ffb200" stroke-width="8" transform="rotate(-32.7619 111.255 385.557)"/>
+        <circle cx="340.56973" cy="237.9894" fill="#0000bf" r="10" stroke="#ffb200" stroke-width="8" transform="rotate(-32.7619 340.57 237.989)"/>
+        <rect fill="#000000" height="7.32" stroke="#0000ff" stroke-width="0" transform="rotate(-32.7619 327.076 214.731)" width="52.05958" x="301.04664" y="211.06795"/>
+        <rect fill="#000000" height="7.32" stroke="#0000ff" stroke-width="0" transform="rotate(-32.7619 95.6769 363.64)" width="52.05958" x="69.6471" y="359.97709"/>
+        <path d="m-28.58107,268.38868l83.66719,17.09317l34.70639,-3.66282l234.26813,0l30.98785,4.88376l80.5684,-17.09317" fill-opacity="0" stroke="#0000ff" stroke-width="12" transform="rotate(-32.7619 203.518 277.546)"/>
+    </g>
+</svg>
