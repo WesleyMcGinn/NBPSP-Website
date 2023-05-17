@@ -5,8 +5,6 @@ body {
 
 #menu {
     position: fixed;
-    left: 0px;
-    top: 0px;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -22,19 +20,30 @@ body {
     text-align: center;
     text-decoration: none;
     text-align: center;
-} #menu li[class="ham"] {
+} .ham {
     display: block;
     float: left;
     padding: 19px 14px;
     border-radius: 20px;
-} #menu li:not([class="logo"]):hover {
+    text-shadow: 0px 0.4px 0.8px black;
+} .ham:hover, #ham:hover {
     cursor: pointer;
-    background-color: #ffb200;
-    color: black;
-    font-weight: 500;
-} .logo {
+    background-color: blue;
+    box-shadow: 2px 2px 7px black;
+} #logo {
+    display: block;
     float: left;
     padding: 3px 14px;
+} #title {
+    display: block;
+    float: left;
+    padding: 10px 0px;
+    padding-right: 5px;
+} #title h2 {
+    margin: 0px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 7px black;
 } #ham {
     visibility: hidden;
     display: block;
@@ -51,7 +60,9 @@ body {
     margin: 8px;
 }
 
-@media (max-width: 800px) {
+/* ------------------------- RESPONSIVE STYLES: ------------------------- */
+
+@media (max-width: 877px) {
     body {
         font-weight: 570;
     }
@@ -59,20 +70,26 @@ body {
         height: auto;
         background-image: none;
     }
-    #menu li[class="ham"] {
+    .ham {
         display: none;
         float: none;
-        color: black;
+        text-shadow: 0px 1px 2px black;
     }
     #ham {
         visibility: visible;
+        position: fixed;
+        top: 0px;
+        right: 0px;
     }
     #content {
         margin: 5px;
     }
+    .col, #title {
+        float: none;
+    }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 878px) {
     #menu li[class="ham"] {
         display: block;
         float: left;
