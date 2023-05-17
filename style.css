@@ -53,6 +53,10 @@ body {
     padding: 13px 14px;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 .box {
     display: inline-block;
     height: 60px;
