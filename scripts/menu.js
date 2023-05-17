@@ -11,7 +11,7 @@ function ham() {
 }
 
 function resize() {
-    if (window.innerWidth <= 877) {
+    if (window.innerWidth <= 840) {
         for (i=0; i<document.getElementsByClassName("ham").length; i++) {
             document.getElementsByClassName("ham")[i].style.display = "none";
         }

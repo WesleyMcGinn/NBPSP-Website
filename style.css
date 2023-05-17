@@ -24,7 +24,6 @@ body {
     text-align: center;
 } .ham {
     display: block;
-    float: left;
     padding: 19px 14px;
     border-radius: 20px;
     text-shadow: 0px 0.4px 0.8px black;
@@ -40,7 +39,6 @@ body {
     display: block;
     float: left;
     padding: 10px 0px;
-    padding-right: 5px;
 } #title h2 {
     margin: 0px;
     font-size: 30px;
@@ -49,7 +47,9 @@ body {
 } #ham {
     visibility: hidden;
     display: block;
-    float: right;
+    position: fixed;
+    top: 0px;
+    right: 0px;
     padding: 13px 14px;
 }
 
@@ -92,7 +92,7 @@ h1 {
 
 /* ------------------------- RESPONSIVE STYLES: ------------------------- */
 
-@media (max-width: 877px) {
+@media (max-width: 840px) {
     body {
         font-weight: 570;
     }
@@ -107,9 +107,6 @@ h1 {
     }
     #ham {
         visibility: visible;
-        position: fixed;
-        top: 0px;
-        right: 0px;
     }
     #content {
         margin: 5px;
@@ -120,10 +117,10 @@ h1 {
     #col1, #col2, #col3 { width: 100%; }
 }
 
-@media (min-width: 878px) {
-    #menu li[class="ham"] {
+@media (min-width: 841px) {
+    .ham {
         display: block;
-        float: left;
+        float: right;
     }
     .col {
         float: left;
