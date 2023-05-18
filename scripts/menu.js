@@ -15,7 +15,7 @@ function ham() {
 }
 
 function resize() {
-    if (window.innerWidth <= 840) {
+    if (window.innerWidth <= 870) {
         for (i=0; i<document.getElementsByClassName("ham").length; i++) {
             document.getElementsByClassName("ham")[i].style.display = "none";
         }
@@ -28,7 +28,7 @@ function resize() {
 
 function unselectHam() {
     if (document.getElementsByClassName("ham")[0].style.display != "none") {
-        if (window.innerWidth <= 800) {
+        if (window.innerWidth <= 870) {
             for (i=0; i<document.getElementsByClassName("ham").length; i++) {
                 document.getElementsByClassName("ham")[i].style.display = "none";
             }

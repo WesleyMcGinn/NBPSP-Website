@@ -149,7 +149,7 @@ input:not([type="checkbox"]), select {
 
 /* ------------------------- RESPONSIVE STYLES: ------------------------- */
 
-@media (max-width: 840px) {
+@media (max-width: 870px) {
     body {
         font-weight: 570;
     }
@@ -174,7 +174,7 @@ input:not([type="checkbox"]), select {
     #col1, #col2, #col3 { width: 100%; }
 }
 
-@media (min-width: 841px) {
+@media (min-width: 871px) {
     .ham {
         display: block;
         float: right;
