@@ -59,6 +59,30 @@ abbr {
     text-decoration: none;
 }
 
+.red {
+    color: red;
+} .noticable {
+    text-shadow: 2px 2px 4px orange;
+} .noticable:hover, .red:hover {
+    text-shadow: 0px 0px 12px red;
+}
+
+.demo {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 750px;
+    box-shadow: 0px 0px 0.35em black;
+}
+
+.equation {
+    text-align: center;
+    font-size: 25px;
+    font-family: cursive, sans-serif;
+} var:hover {
+    font-size: 1.1em;
+    cursor: help;
+}
+
 .box {
     display: inline-block;
     height: 60px;
@@ -66,6 +90,22 @@ abbr {
 
 #content {
     margin: 8px;
+}
+
+legend {
+    font-size: 9px;
+}
+
+.output {
+    padding: 5px;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
 }
 
 .col section {
@@ -78,10 +118,10 @@ abbr {
     border-style: solid;
     border-width: 2px;
     border-color: blue;
-    box-shadow: 1px 2px 0.2em black;
+    box-shadow: 1px 2px 0.27em black;
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
 } .col section:hover {
-    box-shadow: 2px 4px 0.2em black;
+    box-shadow: 2.5px 5px 0.27em black;
 }
 #col1 { width: 54%; }
 #col2, #col3 { width: 23%; }
