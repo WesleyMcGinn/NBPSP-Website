@@ -1,3 +1,7 @@
+function setup() {
+    
+}
+
 function ham() {
     if (document.getElementsByClassName("ham")[0].style.display == "none") {
         for (i=0; i<document.getElementsByClassName("ham").length; i++) {
