@@ -45,11 +45,9 @@ var potentialCalculator = {
         }
         document.getElementById('out2').innerHTML = (Math.round((parseFloat(document.getElementById("mass").value)*parseFloat(document.getElementById("gForce").value)*parseFloat(heightInMeters))*100)/100).toString();
         localStorage.heightUnits = document.getElementById("height_units").value;
-        localStorage.height = heightInMeters;
+        localStorage.height = document.getElementById("height").value;
     }
 }
 
-if (document.title == "NBPSP - Potential to Kinetic Energy") {
-    weightCalculator.setup();
-    potentialCalculator.setup();
-}
+weightCalculator.setup();
+potentialCalculator.setup();
