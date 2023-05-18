@@ -1,6 +1,5 @@
 <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g class="layer">
-<title>Layer 1</title>
+<g>
 <rect fill="#77ddff" height="403.33333" id="svg_1" stroke="#000000" stroke-width="0" width="394.77777" x="-2.33334" y="-2.77777"/>
 <rect fill="#7f7f7f" height="306.77777" id="svg_2" stroke="#000000" stroke-width="0" width="406" x="-4.99999" y="100.77777"/>
 <ellipse cx="339" cy="100.77777" fill="#77ddff" id="svg_4" rx="250" ry="250" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0"/>
@@ -12,8 +11,8 @@
 <use filter="url(#svg_12_blur)" id="svg_12" transform="matrix(0.241637 0 0 0.24171 71.3879 43.2411)" x="-278.26455" xlink:href="#svg_7" y="180.77451"/>
 <line fill="none" id="svg_13" marker-start="url(#se_marker_start_svg_13)" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" x1="89.87767" x2="335.87767" y1="100.47777" y2="100.47767"/>
 <polyline fill="none" id="svg_14" marker-start="url(#se_marker_start_svg_14)" points="336.3333435058594,348.7777738986969 336.3333435058594,224.33333694934845 336.3333435058594,100 " stroke="#000000" stroke-width="null"/>
-<text fill="#000000" font-family="serif" font-size="15" id="svg_15" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="213" xml:space="preserve" y="95.33333">5.5 ft</text>
-<text fill="#000000" font-family="serif" font-size="15" id="svg_16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="353.9947" xml:space="preserve" y="226.99999">5.5 ft</text>
+<text fill="#000000" font-family="serif" font-size="15" id="svg_15" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="213" xml:space="preserve" y="95">5 ft</text>
+<text fill="#000000" font-family="serif" font-size="15" id="svg_16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" x="353.9947" xml:space="preserve" y="226">5 ft</text>
 </g>
 <defs>
 <symbol height="58" id="svg_7" width="380" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
