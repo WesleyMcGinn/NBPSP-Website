@@ -16,7 +16,7 @@ var skateboard = {
             }
             skateboard.skateboard.style.left = skateboard.x.toString()+"px";
             if (skateboard.x > 12000 || skateboard.x < -380) { skateboard.x = -380; }
-        },15);//70FPS
+        },16);//62.5FPS
     },
     frozen : false,
     x : -380,
