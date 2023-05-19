@@ -98,6 +98,12 @@ legend {
     font-size: 9px;
 }
 
+label {
+    font-family: 'Economica', 'Avenir Next Condensed', sans-serif;
+} label abbr {
+    font-family: monospace, sans-serif;
+}
+
 .output {
     padding: 5px;
     font-style: normal;
@@ -108,6 +114,8 @@ legend {
     border-radius: 12px;
     border-width: 2px;
     border-color: black;
+    color: blue;
+    font-family: 'Nova Square', 'Avenir Next Condensed', 'Economica', sans-serif;
 }
 
 .col section {
@@ -149,6 +157,10 @@ input:not([type="checkbox"]), button, select {
     cursor: pointer;
 } input[type="button"], button {
     width: 100%;
+} input[type="button"]:hover, button:hover {
+    color: white;
+    border-color: white;
+    background-color: blue;
 }
 
 /* ------------------------- RESPONSIVE STYLES: ------------------------- */
