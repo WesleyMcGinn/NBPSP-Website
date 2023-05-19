@@ -46,8 +46,21 @@ var potentialCalculator = {
         document.getElementById('out2').innerHTML = (Math.round((parseFloat(document.getElementById("mass").value)*parseFloat(document.getElementById("gForce").value)*parseFloat(heightInMeters))*100)/100).toString();
         localStorage.heightUnits = document.getElementById("height_units").value;
         localStorage.height = document.getElementById("height").value;
+        finalVelocityCalculator.setup();
+    }
+}
+
+var finalVelocityCalculator = {
+    setup : function() {
+        document.getElementById("KE").value = document.getElementById('out2').innerHTML;
+        document.getElementById("Mass").value = document.getElementById("mass").value;
+        this.calculate();
+    },
+    calculate : function() {
+        document.getElementById('out3').innerHTML = (Math.round((Math.sqrt(2*parseFloat(document.getElementById("KE").value)/parseFloat(document.getElementById("Mass").value)))*100)/100).toString()+" <abbr title='Meters per second'>m/s</abbr>"
     }
 }
 
 weightCalculator.setup();
 potentialCalculator.setup();
+finalVelocityCalculator.setup();

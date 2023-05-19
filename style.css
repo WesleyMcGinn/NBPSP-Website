@@ -3,6 +3,7 @@ body {
     font-family: 'Nova Square', 'Avenir Next Condensed', 'Economica', sans-serif;
     background-color: #a8cbff;
     background-attachment: fixed;
+    min-width: 200px;
 }
 
 #menu {
@@ -35,13 +36,14 @@ body {
     display: block;
     float: left;
     padding: 3px 14px;
-} #title {
+} #menu #title {
     display: block;
     float: left;
+    text-align: left;
     padding: 10px 0px;
-} #title:hover, #logo:hover {
+} #menu #title:hover, #logo:hover {
     cursor: pointer;
-} #title h2 {
+} #menu #title h2 {
     margin: 0px;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -76,7 +78,7 @@ abbr {
 
 .equation {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     font-family: cursive, sans-serif;
 } var:hover {
     font-size: 1.1em;
@@ -168,7 +170,7 @@ input:not([type="checkbox"]), select {
     #content {
         margin: 5px;
     }
-    .col, #title {
+    .col, #menu #title {
         float: none;
     }
     #col1, #col2, #col3 { width: 100%; }

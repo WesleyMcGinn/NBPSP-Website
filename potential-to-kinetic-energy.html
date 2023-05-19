@@ -59,7 +59,7 @@
         <div id="content" onmouseenter="unselectHam()">
             <div class="col" id="col1">
                 <section>
-                    <h1>About Potential to Kinetic Energy</h1>
+                    <h1>Potential to Kinetic Energy</h1>
                     <article>
                         <p><b><i>Potential Energy</i></b> is the energy that something has within it that can allow it to move later on.  This energy is stored, like in a stretched rubber band.</p>
                         <p><b><i>Kinetic Energy</i></b> is energy that creates movement.</p>
@@ -71,35 +71,53 @@
                     <article>
                         <p>When you are at the top of a ramp, you have the <b>potential energy</b> to go down.  When you roll over the side of the ramp, this <b>potential energy</b> is converted to <b>kinetic energy</b>.</p>
                         <img class="demo" src="./images/sketches/potential-kinetic.svg" alt="Diagram showing person on skateboard on top of ramp with potential energy and person going down ramp with kinetic energy.">
+                        <p>With a little but of physics, you can determine exactly how much potential graviational energy you have at the top of the ramp and how much kinetic energy you will have once you reach the bottom.</p>
+                        <p>And here's the best part:  When you know how much kinetic energy you have at the bottom of the ramp, you can find out exactly how fast you will be moving!</p>
+                    </article>
+                </section>
+                <section>
+                    <h1>Finding Your Potential Energy</h1>
+                    <article>
+                        <p>This equation is used to determine potential gravitational energy:</p>
+                        <div class="equation"><var title="Gravitational Energy (In Joules)">GE</var> = <var title="Mass (In Kilograms)">m</var><var title="Gravity (In Newtons per Kilogram) [On Earth, this is always approximately equal to 9.81]">g</var><var title="Height / Distance to floor (In meters)">h</var></div>
+                        <p>With the potential energy calculator on this page, you can easily use this formula to determine your potential graviational energy at the top of the ramp!</p>
+                        <p>First, you will need to find your mass.  <b>Mass is very different from weight.</b>  Unlike weight, mass doesn't change in different gravitational fields.  But you can find out what your mass is from how much you weigh on Earth.  The Weight-to-Mass calculator on this page will easily allow you to do this.</p>
+                    </article>
+                </section>
+                <section>
+                    <h1>Finding Your Kinetic Energy and Speed</h1>
+                    <article>
+                        <p>Since <b>ALL</b> of your potential energy will be converted to kinetic energy when you go down the ramp, your kinetic energy at the bottom of the ramp will be <b>EQUAL</b> to your potential graviational energy at the top of the ramp.</p>
+                        <p>Okay, so you have this amount of energy after you go down the side of the ramp.  So what?  Isn't it the <i>SPEED</i> that matters?  Believe it or not, you can find out <i>exactly</i> how fast you will be moving by using another formula, with your gravitational energy as an input!</p>
+                        <div class="equation"><var title="Kinetic Energy (In Joules)">KE</var> = ½<var title="Mass (In Kilograms)">m</var><var title="Velocity (In Meters per Second)">v</var><sup>2</sup></div>
+                        <p>Go ahead and try it out!  You can easily find your speed at the bottom of the ramp by using the Final Velocity Calculator on this page.</p>
                     </article>
                 </section>
             </div>
             <div class="col" id="col2">
                 <section>
-                    <h1>How Much Potential Energy Do YOU Have?</h1>
-                    <p>This equation is used to determine potential gravitational energy:</p>
-                    <div class="equation"><var title="Potential Gravitational Energy (In Joules)">E<sub>g</sub></var> = <var title="Mass (In Kilograms)">m</var><var title="Gravity (In Newtons per Kilogram) [On Earth, this is always approximately equal to 9.81]">g</var><var title="Height / Distance to floor (In meters)">h</var></div>
-                    <p>You can test this formula by entering some data below.</p>
-                    <p>First, you will need to find your mass.  Mass is very different from weight.  Unlike weight, mass doesn't change in different gravitational fields.  For this equation, you will need your mass in kilograms, which the converter below will allow you to find:</p>
+                    <h1>Weight-to-Mass Calculator</h1><br>
                     <fieldset title='"Mass" and "Weight" are very different terms.  If you do not know your mass, this field will help you to figure it out based on your weight on earth.'>
                         <legend>Find your mass in kilograms:</legend>
                         <label for="weight">Your Weight: </lablel>
-                        <input id="weight" type="number" value="180" min="0" max="10000" oninput="weightCalculator.calculate(this.value, true)">
+                        <input id="weight" type="number" value="180" min="0" max="10000" oninput="weightCalculator.calculate(this.value, true)" onclick="weightCalculator.calculate(this.value, true)"/>
                         <label for="weight"><abbr title="Pounds">lbs.</abbr></label><br><br>
-                        <label for="output">Your Mass in Kilograms:</label><br>
+                        <label for="out1">Your Mass in Kilograms:</label><br>
                         <div class="output" id="out1">81.65</div>
                     </fieldset>
-                    <p>Now, you can use your mass, along with the gravitational of the planet your on and the height of the ramp your on, to determine your graviational potential energy!</p>
+                </section>
+                <section>
+                    <h1>Gravitational Potential Energy Calculator</h1><br>
                     <fieldset>
                         <legend>Find your potential energy:</legend>
                         <label for="mass">Your Mass:</lablel>
-                        <input id="mass" type="number" value="81.65" min="0" max="10000" oninput="potentialCalculator.calculate()">
+                        <input id="mass" type="number" value="81.65" min="0" max="10000" oninput="potentialCalculator.calculate()"/>
                         <label for="mass"><b><abbr title="Kilograms">Kg</abbr></b></label><br><br>
                         <label for="gForce">Gravitational Force:</lablel>
-                        <input id="gForce" type="number" value="9.81" min="0" max="10000" oninput="potentialCalculator.calculate()">
+                        <input id="gForce" type="number" value="9.81" min="0" max="10000" oninput="potentialCalculator.calculate()"/>
                         <label for="gForce"><abbr title="Newtons per Kilogram">N/Kg</abbr></label><br><br>
-                        <label for="height">Height:</lablel>
-                        <input id="height" type="number" value="1.6764" min="0" max="10000" oninput="potentialCalculator.calculate()">
+                        <label for="height">Height of Ramp:</lablel>
+                        <input id="height" type="number" value="1.524" min="0" max="10000" oninput="potentialCalculator.calculate()"/>
                         <select id="height_units" oninput="potentialCalculator.calculate()">
                             <option value="m" title="Meters">m</option>
                             <option value="cm" title="Centimeters">cm</option>
@@ -108,25 +126,56 @@
                             <option value="in" title="Inches">in</option>
                             <option value="mi" title="Miles">mi</option>
                             <option value="km" title="Kilometers">km</option>
-                        </select>
-                        <br><br>
-                        <label for="output">Your Potential Energy in Joules:</label><br>
+                        </select><br><br>
+                        <label for="out2">Your Potential Energy in Joules:</label><br>
                         <div class="output" id="out2">1342.77</div>
                     </fieldset>
+                </section>
+                <section>
+                    <h1>Final Velocity Calculator</h1><br>
+                    <fieldset>
+                        <legend>Find your velocity at the bottom of the ramp:</legend>
+                        <label for="KE">Kinetic Energy:</lablel>
+                        <input id="KE" type="number" value="1342.77" min="0" max="100000000" oninput="finalVelocityCalculator.calculate()"/>
+                        <label for="KE"><b><abbr title="Joules">J</abbr></b></label><br><br>
+                        <label for="Mass">Your Mass:</lablel>
+                        <input id="Mass" type="number" value="81.65" min="0" max="10000" oninput="finalVelocityCalculator.calculate()"/>
+                        <label for="Mass"><b><abbr title="Kilograms">Kg</abbr></b></label><br><br>   
+                        <label for="out3">Your Velocity:</label><br>
+                        <div class="output" id="out3">............</div>
+                    </fieldset>
+                </section>
+                <section>
+                    <h1>Wait A Minute....</h1>
+                    <article>
+                        <p>Notice anything wierd about the Final Velocity Calculator?  If you don't, try changing the mass in the Potential Energy Calculator.  This will automatically update the inputs to the Final Velocity Calculator and recalculate the final velocity.  Try watching the final velocity output as you change the mass in the Potential Energy Calculator.  You will notice that it doesn't change.</p>
+                        <p>No, the calculator is not broken.  The fact is that mass has no relevance to how fast you will be traveling after going down the ramp.</p>
+                        <details>
+                            <summary>Explaination</summary>
+                            <p>Take a look at the two equations we talked about earlier:</p>
+                            <div class="equation"><var title="Gravitational Energy (In Joules)">GE</var> = <var title="Mass (In Kilograms)">m</var><var title="Gravity (In Newtons per Kilogram) [On Earth, this is always approximately equal to 9.81]">g</var><var title="Height / Distance to floor (In meters)">h</var></div>
+                            <div class="equation"><var title="Kinetic Energy (In Joules)">KE</var> = ½<var title="Mass (In Kilograms)">m</var><var title="Velocity (In Meters per Second)">v</var><sup>2</sup></div>
+                            <p>Since <abbr title="Gravitational Energy">GE</abbr> = <abbr title="Kinetic Energy">KE</abbr> on the ramp, we can replace <abbr title="Gravitational Energy">GE</abbr> with the value of <abbr title="Kinetic Energy">KE</abbr>.  This is called substitution.</p>
+                            <div class="equation"><var title="Mass (In Kilograms)">m</var><var title="Gravity (In Newtons per Kilogram) [On Earth, this is always approximately equal to 9.81]">g</var><var title="Height / Distance to floor (In meters)">h</var> = ½<var title="Mass (In Kilograms)">m</var><var title="Velocity (In Meters per Second)">v</var><sup>2</sup></div>
+                            <p>Divide both sides of the equation by <abbr title="Mass">m</abbr> and you will get:</p>
+                            <div class="equation"><var title="Gravity (In Newtons per Kilogram) [On Earth, this is always approximately equal to 9.81]">g</var><var title="Height / Distance to floor (In meters)">h</var> = ½<var title="Velocity (In Meters per Second)">v</var><sup>2</sup></div>
+                            <p>Notice that <i>mass isn't involved in the equation at all</i>.  That is why a change in mass will not will not affect the final velocity.</p>
+                        </details>
+                    </article>
                 </section>
             </div>
             <div class="col" id="col3">
                 <section>
                     <h1>About This Element</h1><br>
-                    <img class="demo" src="./images/sketches/vert-ramp.svg" alt="Diagram of ramp showing 5-foot radius after 90-degree downward slope">
+                    <img class="demo" src="./images/sketches/vert-ramp.svg" alt="Diagram of ramp showing 5-foot-radius quarter-of-a-circle cutout into cement">
                     <article>
-                        <p>The skate<wbr>park element you may have found this QR code on is a Vert Ramp that is 5.5 feet (1.6764 meters) tall and stretches out 5.5 feet (1.6764 meters) horizontally.  </p>
+                        <p>The skate<wbr>park element you may have found this QR code on is a Vert Ramp that is 5 feet (1.524 meters) tall and stretches out 5 feet (1.524 meters) horizontally.  </p>
                     </article>
                 </section>
                 <section>
                     <h1 class="red noticable">CHALLENGE!</h1>
                     <article>
-                        <p>Your challenge is to convert your potential graviational energy on the top of the vert ramp to kinetic energy that will bring you down the ramp.  Do do this, you must perform the daring task of riding your skateboard (or other form of transportation) over the edge of the 90-degree cliff and, fueled with the newly converted energy, glide down the vert ramp to the main level.</p>
+                        <p>Your challenge is to convert your potential graviational energy on the top of the vert ramp to kinetic energy that will bring you down the ramp.  Do do this, you must perform the daring task of riding your skateboard (or other form of transportation) over the edge of the ramp and, fueled with the newly converted energy, glide down the vert ramp at full velocity!</p>
                         <p>There's a catch, though: You have to do this <b class="red">WITHOUT GETTING HURT!</b></p>
                         <p>Good luck!</p>
                     </article>
