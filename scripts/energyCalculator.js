@@ -60,7 +60,3 @@ var finalVelocityCalculator = {
         document.getElementById('out3').innerHTML = (Math.round((Math.sqrt(2*parseFloat(document.getElementById("KE").value)/parseFloat(document.getElementById("Mass").value)))*100)/100).toString()+" <abbr title='Meters per second'>m/s</abbr>"
     }
 }
-
-weightCalculator.setup();
-potentialCalculator.setup();
-finalVelocityCalculator.setup();
