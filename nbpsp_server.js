@@ -1,4 +1,4 @@
-var mainPath = "C:/Users/admin/Desktop/Github Stuff/New-Buffalo-Physics-Skate-Park-Website";
+var mainPath = "/home/pi/Desktop/New-Buffalo-Physics-Skate-Park-Website";
 const fs = require('fs');
 const http = require('http');
 
