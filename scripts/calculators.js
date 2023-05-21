@@ -5,10 +5,14 @@ var weightCalculator = {
             this.calculate(parseFloat(localStorage.weight), false);
         }
     },
-    calculate : function(valueInPounds, Interfere) {
+    calculate : function(valueInPounds, Calculate) {
         document.getElementById('out1').innerHTML = (Math.round((parseInt(valueInPounds)*0.4535924)*100)/100).toString();
         localStorage.weight = valueInPounds;
-        potentialCalculator.predefineMass(document.getElementById('out1').innerHTML, Interfere);
+        if (document.title == "NBPSP - Potential to Kinetic Energy") {
+            potentialCalculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
+        } else if (document.title == "NBPSP - Momentum") {
+            momentumCalculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
+        }
     }
 }
 
@@ -58,5 +62,24 @@ var finalVelocityCalculator = {
     },
     calculate : function() {
         document.getElementById('out3').innerHTML = (Math.round((Math.sqrt(2*parseFloat(document.getElementById("KE").value)/parseFloat(document.getElementById("Mass").value)))*100)/100).toString()+" <abbr title='Meters per second'>m/s</abbr>"
+    }
+}
+
+var momentumCalculator = {
+    predefineMass : function(massInKilograms, Calculate) {
+        document.getElementById("momentum_mass").value = massInKilograms;
+        if (Calculate) {
+            this.calculate();
+        }
+    },
+    setup : function() {
+        if (localStorage.velocity != undefined) {
+            document.getElementById("momentum_velocity").value = localStorage.velocity;
+        }
+        this.calculate();
+    },
+    calculate : function() {
+        localStorage.velocity = document.getElementById("momentum_velocity").value;
+        document.getElementById('momentum_out').innerHTML = (Math.round(parseFloat(document.getElementById("momentum_mass").value)*parseFloat(document.getElementById("momentum_velocity").value)*100)/100).toString();
     }
 }
