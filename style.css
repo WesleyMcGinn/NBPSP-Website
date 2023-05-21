@@ -200,23 +200,6 @@ input:not([type="checkbox"]), button, select {
     }
 }
 
-/* ------------------------- SCROLLBAR: ------------------------- */
-
-::-webkit-scrollbar {
-    width: 7px;
-} ::-webkit-scrollbar:hover {
-    width: 12px
-} ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 4px black;
-} ::-webkit-scrollbar-track:hover {
-    box-shadow: inset 0 0 12px blue;
-} ::-webkit-scrollbar-thumb {
-    background: blue;
-    border-radius: 12px;
-} ::-webkit-scrollbar-thumb:hover {
-    background: yellow;
-}
-
 /* ------------------------- FONTS: ------------------------- */
 
 /* latin */
