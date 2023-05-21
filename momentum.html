@@ -93,7 +93,31 @@
                 </section>
             </div>
             <div class="col" id="col2">
-                
+                <section>
+                    <h1>Weight-to-Mass Calculator</h1><br>
+                    <fieldset title='"Mass" and "Weight" are very different terms.  If you do not know your mass, this field will help you to figure it out based on your weight on earth.'>
+                        <legend>Find your mass in kilograms:</legend>
+                        <label for="weight">Your Weight: </lablel>
+                        <input id="weight" type="number" value="180" min="0" max="10000" oninput="weightCalculator.calculate(this.value, true)" onclick="weightCalculator.calculate(this.value, true)"/>
+                        <label for="weight"><abbr title="Pounds">lbs.</abbr></label><br><br>
+                        <label for="out1">Your Mass in Kilograms:</label><br>
+                        <div class="output" id="out1">81.65</div>
+                    </fieldset>
+                </section>
+                <section>
+                    <h1>Momentum Calculator</h1><br>
+                    <fieldset>
+                        <legend>Calculate your momentum:</legend>
+                        <label for="momentum_mass">Your Mass: </lablel>
+                        <input id="momentum_mass" type="number" value="81.65" min="0" max="10000" oninput="momentumCalculator.calculate()" onclick="momentumCalculator.calculate()"/>
+                        <label for="momentum_mass"><abbr title="Kilograms"><b>Kg</b></abbr></label><br><br>
+                        <label for="momentum_velocity">Your Velocity: </lablel>
+                        <input id="momentum_velocity" type="number" value="0" min="0" max="10000" oninput="momentumCalculator.calculate()" onclick="momentumCalculator.calculate()"/>
+                        <label for="momentum_velocity"><abbr title="Meters Per Second">m/s</abbr></label><br><br>
+                        <label for="out1">Your Momentum in <abbr title="Kilogram Meters per Second">Kgᐧm/s</abbr>:</label><br>
+                        <div class="output" id="momentum_out">0</div>
+                    </fieldset>
+                </section>
             </div>
             <div class="col" id="col3">
                 
