@@ -38,7 +38,7 @@
 <polygon cx="88.5" cy="13.5" edge="78.06123" fill="#ffffff" id="svg_57" orient="x" points="342.06866455078125,96 274.4656677246094,105.53060913085938 274.4656677246094,86.4693832397461 342.06866455078125,96 " shape="regularPoly" sides="3" stroke="#000000" stroke-width="2" strokeWidth="0" strokecolor="#000000" transform="rotate(111.017 308.267 96)"/>
 <rect fill="#ffffff" height="59" id="svg_50" rx="12" ry="12" stroke="#000000" stroke-width="2" width="137.5" x="220.25" y="39.5"/>
 <text fill="#000000" font-family="Sans-serif" font-size="12" font-style="italic" id="svg_55" stroke="#000000" stroke-width="0" text-anchor="middle" x="288.25" xml:space="preserve" y="81.875">Check it out, dude!</text>
-<text fill="#000000" font-family="Sans-serif" font-size="12" font-style="italic" id="svg_54" stroke="#000000" stroke-width="0" text-anchor="middle" x="288" xml:space="preserve" y="63">Yo, this stuff is so cool!</text>
+<text fill="#000000" font-family="Sans-serif" font-size="12" font-style="italic" id="svg_54" stroke="#000000" stroke-width="0" text-anchor="middle" x="288" xml:space="preserve" y="63">This stuff is so cool!</text>
 <use id="svg_59" transform="matrix(0.0897161 0 0 0.0881027 9.81607 8.75314)" x="440.55001" xlink:href="#svg_27" y="683.10001"/>
 <g id="svg_60"/>
 </g>
