@@ -12,9 +12,10 @@
         <link rel="icon" type="image/svg" href="./images/logo.svg">
         <link rel="shortcut icon" href="./images/logo.png">
         <link rel="stylesheet" type="text/css" href="./style.css?v=1">
+        <script src="./scripts/main.js" type="text/javascript" onload="if(this.src.indexOf('?')==-1){this.src+='?v='+Math.random().toString()}"></script>
         <script src="./scripts/menu.js?v=3" type="text/javascript"></script>
     </head>
-    <body onresize="resize()" onload="setup()">
+    <body onresize="resize()" onload="setupMenu();setup()" onunload="teardown()">
         <ul id="menu">
             <li id="logo" onclick="location.assign('./home.html')">
                 <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
