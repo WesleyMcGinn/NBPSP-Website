@@ -17,9 +17,12 @@ var vibe = {
         navigator.vibrate(Duration);
     },
     blink : function() {
-        window.setInterval(function() {
+        this.interval = window.setInterval(function() {
             navigator.vibrate(500);
         }, 800);
+    },
+    stopBlink : function() {
+        window.clearInterval(this.interval);
     }
 }
 
