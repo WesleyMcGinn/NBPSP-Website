@@ -1,0 +1,36 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <g>
+        <g>
+            <rect fill="#14c914" height="500" id="svg_1" stroke-width="0" width="500" x="0" y="0"/>
+            <ellipse cx="475" cy="475" fill="#7f7f7f" id="svg_4" rx="440" ry="440" stroke="#ffff56" stroke-width="0"/>
+            <rect fill="#7f7f7f" height="500" id="svg_3" stroke-width="0" width="50" x="35" y="0"/>
+            <ellipse cx="475" cy="475" fill="#14c914" id="svg_6" rx="390" ry="390" stroke-width="0"/>
+            <rect fill="#7f7f7f" height="510" id="svg_2" stroke="#ffff56" stroke-width="2" width="5" x="57.5" y="-5"/>
+            <ellipse cx="475" cy="475" fill="#000000" id="svg_10" rx="5" ry="5" stroke-width="0"/>
+            <text fill="#000000" font-family="cursive" font-size="15" id="svg_24" stroke-width="0" text-anchor="middle" x="416.5" xml:space="preserve" y="496">Center of Circular Path</text>
+        </g>
+        <g id="svg_20" transform="rotate(45 475 475)">
+            <text fill="#7f0000" font-family="cursive" font-size="15" id="svg_21" stroke-width="0" text-anchor="middle" x="262.5" xml:space="preserve" y="468">Direction of Centripetal Acceleration</text>
+            <text fill="#0000ff" font-family="cursive" font-size="15" id="svg_23" stroke-width="0" text-anchor="middle" transform="rotate(-90 58.5 375.75)" x="58.5" xml:space="preserve" y="381">Direction of Movement</text>
+            <line fill="none" id="svg_19" marker-end="url(#pointer_red)" stroke="#7f0000" stroke-width="3" x1="73.5" x2="466.5" y1="475" y2="475"/>
+            <line fill="none" id="svg_22" marker-end="url(#pointer_blue)" stroke="#0000ff" stroke-width="3" x1="71.5" x2="71.5" y1="473" y2="277"/>
+            <g id="svg_18">
+                <rect fill="#0000ff" height="32" id="svg_11" rx="5" ry="5" stroke-width="0" width="16" x="63.5" y="459"/>
+                <rect fill="#000000" height="4.5" id="svg_12" stroke-width="0" width="12.5" x="65.25" y="469"/>
+                <rect fill="#000000" height="4.5" id="svg_13" stroke-width="0" width="12.5" x="65.25" y="481.25"/>
+                <g id="svg_17">
+                    <ellipse cx="67.25" cy="461.28571" fill="#ffff00" id="svg_14" rx="2" ry="0.78571" stroke-width="0"/>
+                    <ellipse cx="76.25" cy="461.28571" fill="#ffff00" id="svg_16" rx="2" ry="0.78571" stroke-width="0"/>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <marker id="pointer_red" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
+            <path d="m100,50l-100,40l30,-40l-30,-40z" fill="#7f0000" stroke-width="0"/>
+        </marker>
+        <marker id="pointer_blue" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
+            <path d="m100,50l-100,40l30,-40l-30,-40z" fill="#0000ff" stroke-width="0"/>
+        </marker>
+    </defs>
+</svg>
