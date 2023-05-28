@@ -99,7 +99,7 @@ a {
     text-decoration: none;
     color: blue;
 } a:visited {
-    color: black;
+    color: darkgreen;
 }
 
 .equation {
