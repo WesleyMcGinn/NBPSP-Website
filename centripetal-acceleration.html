@@ -69,7 +69,32 @@
                 </section>
             </div>
             <div class="col" id="col2">
-                
+                <section>
+                    <h1>Centripetal Acceleration Calculator</h1>
+                    <fieldset>
+                        <legend>Find your centripetal acceleration:</legend>
+                        <label for="centripetal_velocity">Velocity:</lablel>
+                        <input id="centripetal_velocity" type="number" value="5.47" min="0" max="100000000" oninput="centripetalCalculator.calculate()"/>
+                        <label for="centripetal_velocity"><b><abbr title="Meters per second">m/s</abbr></b></label><br><br>
+                        <label for="centripetal_radius">Turn Radius:</lablel>
+                        <input id="centripetal_radius" type="number" value="10" min="0" max="100000000" oninput="centripetalCalculator.calculate()"/>
+                        <label for="centripetal_radius"><b><abbr title="Meters">m</abbr></b></label><br><br>
+                        <label for="centripetal_out">Centripetal Acceleration:</label><br>
+                        <div class="output" id="centripetal_out">2.99 <abbr title="Meters per second per second">m/s<sup>2</sup></abbr></div>
+                    </fieldset>
+                </section>
+                <section>
+                    <h1>How To Know Your Velocity</h1>
+                    <article>
+                        <p>You probably used a QR code to get to this page.  If you are rolling down the ramp that this QR code is on top of, your final velocity will be 4.89 <abbr title="Meters per second">m/s</abbr>.  To learn more about where this value comes from, see the <a href="./potential-to-kinetic-energy.html">Potential to Kinetic Energy Page</a> while knowing that this ramp is four feet tall.  You can also use the calculator on that page to know your velocity coming down from any skatepark element, as long as you know the height.</p>
+                    </article>
+                </section>
+                <section>
+                    <h1>How To Know Your Turn Radius</h1>
+                    <article>
+                        <p>You will notice that there are curved markings of different sizes near the bottom of one side of the ramp.  These curves are turn radius measurements that you can use to approximate your turn radius.  For example, if you turn along a curve marked "4m", your turn radius was about four meters.  You can then enter the number 4 into the "turn radius" blank in the calculator above and, if the entered velocity is correct, know the value of your centripetal acceleration!</p>
+                    </article>
+                </section>
             </div>
             <div class="col" id="col3">
                 
@@ -77,4 +102,8 @@
         </div>
     </body>
     <script src="./scripts/skateboard.js?v=1" type="text/javascript"></script>
+    <script src="./scripts/calculators.js?v=2" type="text/javascript"></script>
+    <script type="text/javascript">
+        centripetalCalculator.setup();
+    </script>
 </html>

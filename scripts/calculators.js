@@ -83,3 +83,20 @@ var momentumCalculator = {
         document.getElementById('momentum_out').innerHTML = (Math.round(parseFloat(document.getElementById("momentum_mass").value)*parseFloat(document.getElementById("momentum_velocity").value)*100)/100).toString();
     }
 }
+
+var centripetalCalculator = {
+    setup : function() {
+        if (localStorage.velocity != undefined) {
+            document.getElementById("centripetal_velocity").value = localStorage.velocity;
+        }
+        if (localStorage.radius != undefined) {
+            document.getElementById("centripetal_radius").value = localStorage.radius;
+        }
+        this.calculate();
+    },
+    calculate : function() {
+        localStorage.velocity = document.getElementById("centripetal_velocity").value;
+        localStorage.radius = document.getElementById("centripetal_radius").value;
+        document.getElementById('centripetal_out').innerHTML = (Math.round(100*Math.pow(parseFloat(document.getElementById("centripetal_velocity").value),2)/parseFloat(document.getElementById("centripetal_radius").value))/100).toString()+' <abbr title="Meters per second per second">m/s<sup>2</sup></abbr>';
+    }
+}
