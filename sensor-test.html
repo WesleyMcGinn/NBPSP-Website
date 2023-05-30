@@ -62,7 +62,7 @@
         <div id="content" onmouseenter="unselectHam()">
             <div class="col" id="col1">
                 <section>
-                    <h1>You Are Viewing an Experimental Page.</h1>
+                    <h1 class="orange">You Are Viewing an Experimental Page.</h1>
                     <p>This page is an experiment to test access to sensors within phones.</p>
                     <p>If we can figure out how to retrieve and process data from a phone's accelerometers and gyroscopes, the NBPSP website may be even more interactive and engaging.</p>
                     <p>You would be able to view your momentum and velocity live.  You could view and understand the forces acting upon you.  You could watch real-time centripetal acceleration and record 3D positional data videos of what you have been able to accomplish in the skatepark.</p>
@@ -72,30 +72,27 @@
             <div class="col" id="col2">
                 <section>
                     <h1>Your Gyroscopes</h1><br>
-                    <div class="output" id="gx">n/a</div><br>
-                    <div class="output" id="gy">n/a</div><br>
-                    <div class="output" id="gz">n/a</div>
+                    <div class="output" id="gx"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div><br>
+                    <div class="output" id="gy"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div><br>
+                    <div class="output" id="gz"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div>
                 </section>
                 <section>
                     <h1>Your Accel<wbr>erometers</h1><br>
-                    <div class="output" id="ax">n/a</div><br>
-                    <div class="output" id="ay">n/a</div><br>
-                    <div class="output" id="az">n/a</div>
-                </section>
-                <section>
-                    <h1>Raw Accel<wbr>erometer Data</h1><br>
-                    <div class="output" id="accel">n/a</div>
+                    <div class="output" id="ax"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div><br>
+                    <div class="output" id="ay"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div><br>
+                    <div class="output" id="az"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div>
                 </section>
             </div>
             <div class="col" id="col3">
                 <section>
-                    <h1>Battery Level</h1><br>
-                    <div class="output" id="battery"><i>Loading....</i></div>
+                    <h1>Battery</h1><br>
+                    <div class="output" id="battery" title="Your device's current battery level"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div><br>
+                    <div class="output" id="battery_charge" title="Your device's current battery charging status"><img alt="Loading...." title="Loading...." type="image/svg+xml" width="35px" src="./images/physics.svg"></div>
                 </section>
                 <section>
                     <h1>Output Test</h1><br>
-                    <button onclick="vibe.len(200)">Vibrate Tiny Bit</button><br><br>
-                    <button onclick="vibe.len(1000)">Vibrate</button><br><br>
+                    <button onclick="vibe.len(100)">Vibrate Tiny Bit</button><br><br>
+                    <button onclick="vibe.len(500)">Vibrate</button><br><br>
                     <button onclick="vibe.len(5000)">Vibrate A Lot</button><br><br>
                     <button onclick="vibe.blink()">Eternal Blink Vibration</button>
                 </section>
@@ -103,5 +100,5 @@
         </div>
     </body>
     <script src="./scripts/skateboard.js?v=1" type="text/javascript"></script>
-    <script src="./scripts/sensors.js?v=1" type="text/javascript"></script>
+    <script src="./scripts/sensors.js?v=2" type="text/javascript"></script>
 </html>
