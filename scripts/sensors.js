@@ -1,17 +1,26 @@
+// Version 2
+
 function setVal(ElementID, Val) {
     document.getElementById(ElementID).innerHTML = Val.toString();
 }
 
+// Gyroscope Data:
 window.addEventListener("deviceorientation", function(event) {
     setVal("gx", event.alpha);
     setVal("gy", event.beta);
     setVal("gz", event.gamma);
-    setVal("accel", JSON.stringify(event.acceleration));
-    setVal("ax", event.acceleration.x);
-    setVal("ay", event.acceleration.y);
-    setVal("az", event.acceleration.z);
 }, true);
 
+// Accelerometer Data:
+const accel = new Accelerometer({frequency:20});
+accel.onreading = function() {
+    setVal("ax", accel.x);
+    setVal("ay", accel.y);
+    setVal("az", accel.z);
+}
+accel.start();
+
+// Vibrator:
 var vibe = {
     len : function(Duration) {
         navigator.vibrate(Duration);
