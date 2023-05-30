@@ -1,3 +1,5 @@
+// Version 2
+
 var weightCalculator = {
     setup : function() {
         if (localStorage.weight != undefined) {
