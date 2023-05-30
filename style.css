@@ -1,3 +1,6 @@
+/* NBPSP CSS Stylesheet */
+/* Version 3 */
+
 body {
     margin: 0px;
     font-family: 'Nova Square', 'Avenir Next Condensed', 'Economica', sans-serif;
@@ -60,6 +63,10 @@ body {
 
 abbr {
     text-decoration: none;
+}
+
+.clickme:hover {
+    cursor: pointer;
 }
 
 .blue {

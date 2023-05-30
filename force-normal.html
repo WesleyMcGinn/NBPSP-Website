@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/svg" href="./images/logo.svg">
         <link rel="shortcut icon" href="./images/logo.png">
-        <link rel="stylesheet" type="text/css" href="./style.css?v=2">
+        <link rel="stylesheet" type="text/css" href="./style.css?v=3">
         <script src="./scripts/main.js" type="text/javascript" onload="if(this.src.indexOf('?')==-1){this.src+='?v='+Math.random().toString()}"></script>
         <script src="./scripts/menu.js?v=3" type="text/javascript"></script>
     </head>
@@ -65,7 +65,7 @@
             <div class="col" id="col1">
                 <section>
                     <details>
-                        <summary onclick="this.innerHTML='Introduction to Forces'"><small>Click Here for a Brief Introduction To Forces</small></summary>
+                        <summary onclick="this.innerHTML='Introduction to Forces'"><small>Tap Here for a Brief Introduction To Forces</small></summary>
                         <article>
                             <p>Forces create acceleration.  When a force is applied to an object, the acceleration of that object changes to either slow down or to speed up in a particular direction.  Because acceleration is necessary for all movement, forces are very important to the functioning of the universe.</p>
                             <p>There are many different kinds of forces, including gravitational force, lift force, buoyancy force, applied force, tension force, friction force, and normal force.  These forces are usually referred to with the word "force" coming first; for example, gravitational force is referred to as "force gravitational" or "force of gravity".</p>
@@ -81,6 +81,9 @@
                         <p>Take a look at the force diagram below:</p>
                         <img class="demo" type="image/svg+xml" src="./images/sketches/forces.svg" alt="Diagram showing force normal pushing up equal with force gravitational pushing down">
                         <p>You will see that force normal is countering the force of gravity by accelerating the person in the opposite direction with an equal force.  (The two little red lines across each of the two vectors mean that the magnitudes are equal.)  This creates a net force, or "final force", of zero, so the person isn't accelerating or decelerating in any direction.</p>
+                        <p>But force normal doesn't always push upwards; instead, it always works perpendicular to the surface, as shown in the diagram below:</p>
+                        <img class="demo clickme" type="image/svg+xml" onclick="this.src='./images/sketches/perpendicular_net.svg'" src="./images/sketches/perpendicular.svg" alt="Diagram showing force normal coming out from slope while gravity still points down; click diagram to reveal the net force arrow to show the final direction of acceleration">
+                        <p>When you combine the two force vectors, you end up with a net force vector, revealing the final direction of acceleration.  You can tap the picture above to reveal the net force arrow (in orange).</p>
                     </article>
                 </section>
                 <section>
