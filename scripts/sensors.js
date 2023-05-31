@@ -10,13 +10,29 @@ window.addEventListener("deviceorientation", function(event) {
     setVal("gy", Math.round(event.beta*100)/100);
     setVal("gz", Math.round(event.gamma*100)/100);
 }, true);
+window.setTimeout(function() {
+    setVal("gx", "<i class='red'>No Alpha Gyroscope</i>");
+    setVal("gy", "<i class='red'>No Beta Gyroscope</i>");
+    setVal("gz", "<i class='red'>No Gamma Gyroscope</i>");
+}, 2000);
 
 // Accelerometer Data:
-const accel = new Accelerometer({frequency:20});
+const accel = new Accelerometer({frequency:60});
 accel.onreading = function() {
     setVal("ax", Math.round(accel.x*100)/100);
     setVal("ay", Math.round(accel.y*100)/100);
     setVal("az", Math.round(accel.z*100)/100);
+}
+accel.onactivate = function(event) {
+    if (event.isTrusted) {
+        window.setTimeout(function() {
+            if (!accel.hasReading) {
+                setVal("ax", "<i class='red'>No X-accelerometer</i>");
+                setVal("ay", "<i class='red'>No Y-accelerometer</i>");
+                setVal("az", "<i class='red'>No Z-accelerometer</i>");
+            }
+        }, 2000);
+    }
 }
 accel.start();
 
