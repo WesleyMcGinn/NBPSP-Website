@@ -39,7 +39,7 @@ var vibe = {
 window.setInterval(function() {
     navigator.getBattery().then((battery)=>{
         setVal("battery", Math.round(battery.level*100).toString()+"%");
-        var gradient = ("linear-gradient(90deg," + ("springgreen,").repeat(Math.round(battery.level*25)) + ("white,").repeat(Math.round(25-battery.level*25)));
+        var gradient = ("linear-gradient(90deg," + ("#0f0,").repeat(Math.round(battery.level*50)) + ("white,").repeat(Math.round(50-battery.level*50)));
         document.getElementById("battery").style.backgroundImage = gradient.slice(0,gradient.length-1)+")";
         if (battery.charging) {
             document.getElementById("battery_charge").style.backgroundColor = "rgb("+Math.round(battery.level*-255+255).toString()+",255,"+Math.round(battery.level*-255+255).toString()+")";
