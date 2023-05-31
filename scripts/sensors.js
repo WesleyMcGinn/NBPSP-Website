@@ -1,4 +1,4 @@
-// Version 3
+// Version 4
 
 function setVal(ElementID, Val) {
     document.getElementById(ElementID).innerHTML = Val.toString();
@@ -14,9 +14,9 @@ window.addEventListener("deviceorientation", function(event) {
 // Accelerometer Data:
 const accel = new Accelerometer({frequency:20});
 accel.onreading = function() {
-    setVal("ax", accel.x);
-    setVal("ay", accel.y);
-    setVal("az", accel.z);
+    setVal("ax", Math.round(accel.x*100)/100);
+    setVal("ay", Math.round(accel.y*100)/100);
+    setVal("az", Math.round(accel.z*100)/100);
 }
 accel.start();
 
