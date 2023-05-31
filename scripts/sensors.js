@@ -6,9 +6,9 @@ function setVal(ElementID, Val) {
 
 // Gyroscope Data:
 window.addEventListener("deviceorientation", function(event) {
-    setVal("gx", event.alpha);
-    setVal("gy", event.beta);
-    setVal("gz", event.gamma);
+    setVal("gx", Math.round(event.alpha*100)/100);
+    setVal("gy", Math.round(event.beta*100)/100);
+    setVal("gz", Math.round(event.gamma*100)/100);
 }, true);
 
 // Accelerometer Data:
