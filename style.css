@@ -65,10 +65,6 @@ abbr {
     text-decoration: none;
 }
 
-.clickme:hover {
-    cursor: pointer;
-}
-
 .blue {
     color: blue;
 } .green {
@@ -187,7 +183,7 @@ input:not([type="checkbox"]), button, select {
     border-width: 2px;
     border-color: blue;
     font-family: 'Nova Square', 'Avenir Next Condensed', 'Economica', sans-serif;
-} select:hover, summary:hover, input[type="button"]:hover, button:hover {
+} select:hover, summary:hover, input[type="button"]:hover, button:hover, .clickme:hover {
     cursor: pointer;
 } input[type="button"], button {
     background-color: rgba(255, 255, 255, 0.5);
