@@ -1,5 +1,5 @@
 /* NBPSP CSS Stylesheet */
-/* Version 3 */
+/* Version 4 */
 
 body {
     margin: 0px;
@@ -59,6 +59,14 @@ body {
     top: 0px;
     right: 0px;
     padding: 13px 14px;
+} .selected {
+    box-shadow: 0px 0px 7px darkblue inset;
+    background-color: royalblue;
+} .selected:hover {
+    cursor: not-allowed;
+    background-color: royalblue;
+    box-shadow: 0px 0px 12px darkblue inset;
+    border-radius: 0px;
 }
 
 abbr {

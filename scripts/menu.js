@@ -1,9 +1,9 @@
-// Version 3
+// Version 4
 
 function setupMenu() {
     for (i=0; i<document.getElementsByClassName("ham").length; i++) {
         if (document.title.indexOf(document.getElementsByClassName("ham")[i].innerHTML) != -1) {
-            document.getElementsByClassName("ham")[i].style.backgroundColor = "royalblue";
+            document.getElementsByClassName("ham")[i].className += " selected";
         }
     }
 }
