@@ -30,12 +30,11 @@ body {
     display: block;
     padding: 19px 14px;
     text-shadow: 0px 0.4px 0.8px black;
+    border-radius: 20px;
 } .ham:hover, #ham:hover {
     cursor: pointer;
     background-color: blue;
     box-shadow: 2px 2px 7px black;
-} .ham:hover {
-    border-radius: 20px;
 } #logo {
     display: block;
     float: left;
@@ -62,11 +61,11 @@ body {
 } .selected {
     box-shadow: 0px 0px 7px darkblue inset;
     background-color: royalblue;
+    border-radius: 0px;
 } .selected:hover {
     cursor: not-allowed;
     background-color: royalblue;
     box-shadow: 0px 0px 12px darkblue inset;
-    border-radius: 0px;
 }
 
 abbr {
