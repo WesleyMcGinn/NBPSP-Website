@@ -101,11 +101,20 @@
                     <button onclick="vibe.len(100)">Vibrate Tiny Bit</button><br><br>
                     <button onclick="vibe.len(500)">Vibrate</button><br><br>
                     <button onclick="vibe.len(5000)">Vibrate A Lot</button><br><br>
-                    <button onclick="vibe.blink()">Eternal Blink Vibration</button>
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <button onclick="vibe.blink()">Start Blink</button>
+                            </td>
+                            <td>
+                                <button onclick="vibe.stopBlink()">Stop Blink</button>
+                            </td>
+                        </tr>
+                    </table>
                 </section>
             </div>
         </div>
     </body>
     <script src="./scripts/skateboard.js?v=1" type="text/javascript"></script>
-    <script src="./scripts/sensors.js?v=4" type="text/javascript"></script>
+    <script src="./scripts/sensors.js?v=5" type="text/javascript"></script>
 </html>

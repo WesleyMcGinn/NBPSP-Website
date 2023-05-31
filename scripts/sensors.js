@@ -1,4 +1,4 @@
-// Version 4
+// Version 5
 
 function setVal(ElementID, Val) {
     document.getElementById(ElementID).innerHTML = Val.toString();
@@ -41,6 +41,7 @@ var vibe = {
     len : function(Duration) {
         navigator.vibrate(Duration);
     },
+    interval : -1,
     blink : function() {
         this.interval = window.setInterval(function() {
             navigator.vibrate(500);
