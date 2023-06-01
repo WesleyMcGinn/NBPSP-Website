@@ -1,4 +1,4 @@
-// Version 5
+// Version 6
 
 function setVal(ElementID, Val) {
     document.getElementById(ElementID).innerHTML = Val.toString();
@@ -64,14 +64,14 @@ window.setInterval(function() {
         document.getElementById("battery").style.backgroundImage = gradient.slice(0,gradient.length-1)+")";
         if (battery.charging) {
             document.getElementById("battery_charge").style.backgroundColor = "rgb("+Math.round(battery.level*-255+255).toString()+",255,"+Math.round(battery.level*-255+255).toString()+")";
-            if (battery.chargingTime.toString() == Infinity) {
+            if (battery.chargingTime.toString() == Infinity || battery.chargingTime.toString() == 0) {
                 setVal("battery_charge","Charging<br>");
             } else {
                 setVal("battery_charge","Charging<br>(≈"+Math.round(battery.chargingTime/60).toString()+" min until full)");
             }
         } else {
             document.getElementById("battery_charge").style.backgroundColor = "rgb(255,"+Math.round(battery.level*255).toString()+","+Math.round(battery.level*255).toString()+")";
-            if (battery.dischargingTime.toString() == Infinity) {
+            if (battery.dischargingTime.toString() == Infinity || battery.dischargingTime.toString() == 0) {
                 setVal("battery_charge","Running on Battery<br>");
             } else {
                 setVal("battery_charge","Running on Battery<br>(≈"+Math.round(battery.dischargingTime/60).toString()+" min remaining)");
