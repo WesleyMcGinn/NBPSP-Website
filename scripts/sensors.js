@@ -14,7 +14,7 @@ window.setTimeout(function() {
     setVal("gx", "<i class='red'>No Alpha Gyroscope</i>");
     setVal("gy", "<i class='red'>No Beta Gyroscope</i>");
     setVal("gz", "<i class='red'>No Gamma Gyroscope</i>");
-}, 2000);
+}, 5000);
 
 // Accelerometer Data:
 const accel = new Accelerometer({frequency:60});
@@ -31,7 +31,7 @@ accel.onactivate = function(event) {
                 setVal("ay", "<i class='red'>No Y-accelerometer</i>");
                 setVal("az", "<i class='red'>No Z-accelerometer</i>");
             }
-        }, 2000);
+        }, 5000);
     }
 }
 accel.start();
