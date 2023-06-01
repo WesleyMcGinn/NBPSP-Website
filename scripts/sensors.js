@@ -32,6 +32,10 @@ accel.onactivate = function(event) {
                 setVal("az", "<i class='red'>No Z-accelerometer</i>");
             }
         }, 5000);
+    } else {
+        setVal("ax", "<i class='red'>Accelerometer Access Not Granted</i>");
+        setVal("ay", "<i class='red'>Accelerometer Access Not Granted</i>");
+        setVal("az", "<i class='red'>Accelerometer Access Not Granted</i>");
     }
 }
 accel.start();
