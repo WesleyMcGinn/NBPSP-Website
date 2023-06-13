@@ -1,64 +1,62 @@
 <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="svg_14" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-<g id="svg_25">
-<line fill="none" id="svg_26" stroke="#7f7f7f" stroke-width="10" x1="68.5" x2="79.5" y1="21" y2="42"/>
-<line fill="none" id="svg_27" stroke="#7f7f7f" stroke-width="12" x1="94.5" x2="77.5" y1="17" y2="43"/>
-<line fill="none" id="svg_28" stroke="#7f7f7f" stroke-width="12" x1="286.5" x2="300.5" y1="19" y2="43"/>
-<line fill="none" id="svg_29" stroke="#7f7f7f" stroke-width="10" x1="309.5" x2="302.5" y1="22" y2="41"/>
-<circle cx="80" cy="46" fill="#0000bf" id="svg_30" r="8" stroke="#ffb200" stroke-width="8"/>
-<circle cx="300" cy="46" fill="#0000bf" id="svg_31" r="8" stroke="#ffb200" stroke-width="8"/>
-<rect fill="#000000" height="7" id="svg_32" stroke="#0000ff" stroke-width="0" width="42" x="280" y="21"/>
-<rect fill="#000000" height="7" id="svg_33" stroke-width="0" width="42" x="58" y="21"/>
-<path d="m2.5,5l67.5,14l28,-3l189,0l25,4l65,-15" fill-opacity="0" id="svg_34" stroke="#0000ff" stroke-width="10"/>
+<symbol id="$14" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<g id="$25">
+<line fill="none" id="$26" stroke="#7f7f7f" stroke-width="10" x1="68.5" x2="79.5" y1="21" y2="42"/>
+<line fill="none" id="$27" stroke="#7f7f7f" stroke-width="12" x1="94.5" x2="77.5" y1="17" y2="43"/>
+<line fill="none" id="$28" stroke="#7f7f7f" stroke-width="12" x1="286.5" x2="300.5" y1="19" y2="43"/>
+<line fill="none" id="$29" stroke="#7f7f7f" stroke-width="10" x1="309.5" x2="302.5" y1="22" y2="41"/>
+<circle cx="80" cy="46" fill="#0000bf" id="$30" r="8" stroke="#ffb200" stroke-width="8"/>
+<circle cx="300" cy="46" fill="#0000bf" id="$31" r="8" stroke="#ffb200" stroke-width="8"/>
+<rect fill="#000000" height="7" id="$32" stroke="#0000ff" stroke-width="0" width="42" x="280" y="21"/>
+<rect fill="#000000" height="7" id="$33" stroke-width="0" width="42" x="58" y="21"/>
+<path d="m2.5,5l67.5,14l28,-3l189,0l25,4l65,-15" fill-opacity="0" id="$34" stroke="#0000ff" stroke-width="10"/>
 </g>
 </symbol>
-<filter height="200%" id="svg_36_blur" width="200%" x="-50%" y="-50%">
+<filter height="200%" id="$36_blur" width="200%" x="-50%" y="-50%">
 <feGaussianBlur stdDeviation="3"/>
 </filter>
-<marker id="se_marker_start_svg_19" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="leftarrow" viewBox="0 0 100 100">
+<marker id="se_marker_start_$19" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="leftarrow" viewBox="0 0 100 100">
 <path d="m0,50l100,40l-30,-40l30,-40z" fill="#ffff00" stroke="#ffff00" stroke-width="10"/>
 </marker>
-<marker id="se_marker_end_svg_18" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
+<marker id="se_marker_end_$18" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
 <path d="m100,50l-100,40l30,-40l-30,-40z" fill="#0000ff" stroke="#0000ff" stroke-width="10"/>
 </marker>
-<marker id="se_marker_end_svg_44" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
+<marker id="se_marker_end_$44" markerHeight="5" markerUnits="strokeWidth" markerWidth="5" orient="auto" refX="50" refY="50" se_type="rightarrow" viewBox="0 0 100 100">
 <path d="m100,50l-100,40l30,-40l-30,-40z" fill="#ff7f00" stroke="#ff7f00" stroke-width="10"/>
 </marker>
 </defs>
 <g>
-<g id="svg_37">
-<g id="svg_1">
-<rect fill="#7df" height="300" id="svg_2" stroke-width="0" width="500" x="-0.7" y="0"/>
+<g id="$37">
+<g id="$1">
+<rect fill="#7df" height="300" id="$2" stroke-width="0" width="500" x="-0.7" y="0"/>
 <g id="rotatable">
-<rect fill="#7f7f7f" height="300" id="svg_3" stroke-width="0" transform="rotate(-30 364.67 351.954)" width="900" x="-85.33012" y="201.95379"/>
-<g filter="url(#svg_36_blur)" id="svg_36" transform="rotate(-30 256.18 157.176)">
-<g id="svg_4" transform="rotate(-2.89875 259.955 153.293)">
-<line fill="none" id="svg_5" stroke="#000" stroke-width="2" transform="rotate(5.40012 245.583 198.435)" x1="236.10539" x2="255.06048" y1="219.53189" y2="177.33771"/>
-<line fill="none" id="svg_6" stroke="#000" stroke-width="2" transform="rotate(5.40012 265.075 199.243)" x1="275.07903" x2="255.07087" y1="218.2825" y2="180.20483"/>
-<line fill="none" id="svg_7" stroke="#000" stroke-width="2" transform="rotate(5.40012 257.804 153.073)" x1="256.22456" x2="259.38374" y1="126.83023" y2="179.315"/>
-<line fill="none" id="svg_8" stroke="#000" stroke-width="2" transform="rotate(5.40012 259.9 141.389)" x1="234.134" x2="285.733" y1="142.41875" y2="140.3605"/>
-<circle cx="260.49304" cy="107.8437" fill="none" id="svg_9" r="19.81067" stroke="#000" stroke-width="2" transform="rotate(5.40012 260.493 107.843)"/>
-<circle cx="255.97749" cy="99.4" fill="#000" id="svg_10" r="3.08737" stroke-width="2" transform="rotate(5.40012 255.977 99.4)"/>
-<circle cx="269.08233" cy="100.90282" fill="#000" id="svg_11" r="3.08737" stroke-width="2" transform="rotate(5.40012 269.082 100.903)"/>
-<path d="m251.21235,110.25251c1.36112,3.432 2.00165,4.50495 3.3828,5.75512c1.38115,1.25019 3.30274,2.19859 6.045,2.09083c2.74226,-0.10777 5.00414,-1.40106 6.46535,-3.29789c1.4612,-1.89684 2.38197,-5.13004 2.38197,-5.31326" fill="none" id="svg_12" stroke="#000" stroke-width="2" transform="rotate(5.40012 260.35 113.797)"/>
+<rect fill="#7f7f7f" height="300" id="$3" stroke-width="0" transform="rotate(-30 364.67 351.954)" width="900" x="-85.33012" y="201.95379"/>
+<g filter="url(#$36_blur)" id="$36" transform="rotate(-30 256.18 157.176)">
+<g id="$4" transform="rotate(-2.89875 259.955 153.293)">
+<line fill="none" id="$5" stroke="#000" stroke-width="2" transform="rotate(5.40012 245.583 198.435)" x1="236.10539" x2="255.06048" y1="219.53189" y2="177.33771"/>
+<line fill="none" id="$6" stroke="#000" stroke-width="2" transform="rotate(5.40012 265.075 199.243)" x1="275.07903" x2="255.07087" y1="218.2825" y2="180.20483"/>
+<line fill="none" id="$7" stroke="#000" stroke-width="2" transform="rotate(5.40012 257.804 153.073)" x1="256.22456" x2="259.38374" y1="126.83023" y2="179.315"/>
+<line fill="none" id="$8" stroke="#000" stroke-width="2" transform="rotate(5.40012 259.9 141.389)" x1="234.134" x2="285.733" y1="142.41875" y2="140.3605"/>
+<circle cx="260.49304" cy="107.8437" fill="none" id="$9" r="19.81067" stroke="#000" stroke-width="2" transform="rotate(5.40012 260.493 107.843)"/>
+<circle cx="255.97749" cy="99.4" fill="#000" id="$10" r="3.08737" stroke-width="2" transform="rotate(5.40012 255.977 99.4)"/>
+<circle cx="269.08233" cy="100.90282" fill="#000" id="$11" r="3.08737" stroke-width="2" transform="rotate(5.40012 269.082 100.903)"/>
+<path d="m251.21235,110.25251c1.36112,3.432 2.00165,4.50495 3.3828,5.75512c1.38115,1.25019 3.30274,2.19859 6.045,2.09083c2.74226,-0.10777 5.00414,-1.40106 6.46535,-3.29789c1.4612,-1.89684 2.38197,-5.13004 2.38197,-5.31326" fill="none" id="$12" stroke="#000" stroke-width="2" transform="rotate(5.40012 260.35 113.797)"/>
 </g>
-<use id="svg_15" transform="matrix(0.263158 0 0 0.263158 0 0)" x="783.73507" xlink:href="#svg_14" y="817.39249"/>
+<use id="$15" transform="matrix(0.263158 0 0 0.263158 0 0)" x="783.73507" xlink:href="#$14" y="817.39249"/>
 </g>
-<g id="svg_38">
-<text fill="#0000ff" font-family="Cursive" font-size="12" id="svg_22" stroke-width="0" text-anchor="middle" transform="rotate(-30 250.536 60.0845)" x="249.19414" xml:space="preserve" y="63.91783">Force Normal</text>
-<line fill="none" id="svg_18" marker-end="url(#se_marker_end_svg_18)" stroke="#0000ff" stroke-width="2" transform="rotate(-30 220.834 92.822)" x1="220.58354" x2="221.08354" y1="161.48906" y2="24.15487"/>
-<line fill="none" id="svg_20" stroke="#ff0000" stroke-width="2" transform="rotate(-30 220.48 92.2089)" x1="212.72959" x2="228.22959" y1="92.2089" y2="92.2089"/>
-</g>
-</g>
-<text fill="#ffff00" font-family="Cursive" font-size="12" font-weight="bold" id="svg_24" stroke="#000000" stroke-width="0" text-anchor="middle" x="299.25" xml:space="preserve" y="243.5">Force of Gravity</text>
-<g id="svg_16"/>
-<polyline fill="none" id="svg_19" marker-start="url(#se_marker_start_svg_19)" points="254.25,292.5 254.5,223.83291625976562 254.75,155.1658172607422 " stroke="#ffff00" stroke-width="2"/>
-<circle cx="255" cy="152" fill="#000000" id="svg_13" r="3.5" stroke="#000000" stroke-width="0"/>
-<line fill="none" id="svg_21" stroke="#ff0000" stroke-width="2" x1="246.75" x2="262.25" y1="223.125" y2="223.125"/>
+<g id="$38">
+<text fill="#0000ff" font-family="Cursive" font-size="12" id="$22" stroke-width="0" text-anchor="middle" transform="rotate(-30 250.536 60.0845)" x="249.19414" xml:space="preserve" y="63.91783">Force Normal</text>
+<line fill="none" id="$18" marker-end="url(#se_marker_end_$18)" stroke="#0000ff" stroke-width="2" transform="rotate(-30 220.834 92.822)" x1="220.58354" x2="221.08354" y1="161.48906" y2="24.15487"/>
 </g>
 </g>
-<line fill="none" fill-opacity="0" id="svg_44" marker-end="url(#se_marker_end_svg_44)" stroke="#ff7f00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="251.7" x2="184.33333" y1="153.33333" y2="196.7"/>
-<text fill="#ff7f00" font-family="Cursive" font-size="12" font-weight="bold" id="svg_46" stroke="#000000" stroke-width="0" text-anchor="middle" x="181.16831" xml:space="preserve" y="169.1">NET Force</text>
+<text fill="#ffff00" font-family="Cursive" font-size="12" font-weight="bold" id="$24" stroke="#000000" stroke-width="0" text-anchor="middle" x="299.25" xml:space="preserve" y="243.5">Force of Gravity</text>
+<g id="$16"/>
+<polyline fill="none" id="$19" marker-start="url(#se_marker_start_$19)" points="254.25,292.5 254.5,223.83291625976562 254.75,155.1658172607422 " stroke="#ffff00" stroke-width="2"/>
+<circle cx="255" cy="152" fill="#000000" id="$13" r="3.5" stroke="#000000" stroke-width="0"/>
+</g>
+</g>
+<line fill="none" fill-opacity="0" id="$44" marker-end="url(#se_marker_end_$44)" stroke="#ff7f00" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="251.7" x2="184.33333" y1="153.33333" y2="196.7"/>
+<text fill="#ff7f00" font-family="Cursive" font-size="12" font-weight="bold" id="$46" stroke="#000000" stroke-width="0" text-anchor="middle" x="181.16831" xml:space="preserve" y="169.1">NET Force</text>
 </g>
 </svg>
