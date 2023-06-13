@@ -89,10 +89,67 @@
                 <section>
                     <h1 class="orange">How Does This Apply to Skateboarding?</h1>
                     <p>Everything in the skatepark that you ride on with your skateboard applies force normal to you.  And now that you understand force normal, you can use it to do some cool stuff with your skateboard!</p>
+                    <p>In the <a href="./centripetal-acceleration.html">previous physics tutorial</a>, the challenge was to take as sharp a turn as possible.  Now, with the help of force normal, you should be able to make much sharper turns.  See the <i class="red">challenge</i> on this page for more information.</p>
                 </section>
             </div>
             <div class="col" id="col2">
-                
+                <section>
+                    <h1>How Much Force Normal Is Holding You Up?</h1>
+                    <p>How much normal force is holding you up right now?  To start, if you are standing still on a flat slope, the force normal holding you up will be equal to the gravitational force pulling you down.  Since a force is measured as mass times acceleration, the gravitational force pulling you down is equal to your mass times the constant acceleration of gravity:</p>
+                    <div class="equation"><var title="Gravitational Force (in Newtons)">F<sub>G</sub></var> = <var title="Mass (in Kilograms)">m</var><var title="Graviatonal acceleration constant (in meters per second per second) [On earth, this is always approximately equal to 9.81]">g</var></div>
+                    <p>If you aren't sure of your mass in kilograms, you can enter your weight into the calculator below to find it.</p>
+                </section>
+                <section>
+                    <h1>Weight-to-Mass Calculator</h1><br>
+                    <fieldset title='"Mass" and "Weight" are very different terms.  If you do not know your mass, this field will help you to figure it out based on your weight on earth.'>
+                        <legend>Find your mass in kilograms:</legend>
+                        <label for="weight">Your Weight: </lablel>
+                        <input id="weight" type="number" value="180" min="0" max="10000" oninput="weightCalculator.calculate(this.value, true)" onclick="weightCalculator.calculate(this.value, true)"/>
+                        <label for="weight"><abbr title="Pounds">lbs.</abbr></label><br><br>
+                        <label for="out1">Your Mass in Kilograms:</label><br>
+                        <div class="output" id="out1">81.65</div>
+                    </fieldset>
+                </section>
+                <section>
+                    <p>The gravitational acceleration on earth is entered in a blank below.  Simply enter your mass (calculated above) to find the exact amount of force normal holding you up.</p>
+                </section>
+                <section>
+                    <h1>Force Normal 0° Calculator</h1><br>
+                    <fieldset>
+                        <legend>Find the amount of force normal applied to you:</legend>
+                        <label for="normal0_gravity">Gravitational Acceleration:</label>
+                        <input id="normal0_gravity" type="number" value="9.81" min="0" max="10000" oninput="normal0Calculator.calculate()" onclick="normal0Calculator.calculate()">
+                        <label for="normal0_gravity"><abbr title="Meters per second per second">m/s<sup>2</sup></abbr></label><br><br>
+                        <label for="normal0_mass">Your Mass:</label>
+                        <input id="normal0_mass" type="number" value="81.65" min="0" max="10000" oninput="normal0Calculator.calculate()" onclick="normal0Calculator.calculate()">
+                        <label for="normal0_mass"><b><abbr title="Kilograms">Kg</abbr></b></label><br><br>
+                        <label for="normal0_out">Force Normal:</label><br>
+                        <div class="output" id="normal0_out">800.99 <abbr title="Newtons">N</abbr></div>
+                    </fieldset>
+                </section>
+                <section>
+                    <h1>Angled Force Normal</h1>
+                    <p>But what if you aren't on a flat surface?  How much force normal is applied to you then?  This question can be easily solved with the following formula:</p>
+                    <div class="equation"><var title="Force Normal (in Newtons)">F<sub>N</sub></var> = <var title="Mass (in Kilograms)">m</var><var title="Gravitational Acceleration (in Meters per second per second)">g</var> <b style="font-family:sans-serif">cos(</b><var title="Angle of ground (in degrees)">θ</var><b style="font-family:sans-serif">)</b></div>
+                    <p>You can easily use this formula by entering information in the calculator below.  If the browser you are currently using allows access to the gyroscopes within your phone, the angle blank will automatically match the angle of your phone.</p>
+                </section>
+                <section>
+                    <h1>Angled Force Normal Calculator</h1>
+                    <fieldset>
+                        <legend>Find the amount of force normal applied to you:</legend>
+                        <label for="normal_gravity">Gravitational Acceleration:</label>
+                        <input id="normal_gravity" type="number" value="9.81" min="0" max="10000" oninput="normalCalculator.calculate()" onclick="normalCalculator.calculate()">
+                        <label for="normal_gravity"><abbr title="Meters per second per second">m/s<sup>2</sup></abbr></label><br><br>
+                        <label for="normal_mass">Your Mass:</label>
+                        <input id="normal_mass" type="number" value="81.65" min="0" max="10000" oninput="normalCalculator.calculate()" onclick="normalCalculator.calculate()">
+                        <label for="normal_mass"><b><abbr title="Kilograms">Kg</abbr></b></label><br><br>
+                        <label for="normal_theta">Angle of Ground:</label>
+                        <input id="normal_theta" type="number" value="0" min="-180" max="180" oninput="normalCalculator.calculate()" onclick="normalCalculator.calculate()">
+                        <label for="normal_theta"><abbr title="Degrees">°</abbr></label><br><br>
+                        <label for="normal_out">Force Normal:</label><br>
+                        <div class="output" id="normal_out">800.99 <abbr title="Newtons">N</abbr></div>
+                    </fieldset>
+                </section>
             </div>
             <div class="col" id="col3">
                 
@@ -100,4 +157,10 @@
         </div>
     </body>
     <script src="./scripts/skateboard.js?v=1" type="text/javascript"></script>
+    <script src="./scripts/calculators.js?v=3" type="text/javascript"></script>
+    <script type="text/javascript">
+        weightCalculator.setup();
+        normal0Calculator.setup();
+        normalCalculator.setup();
+    </script>
 </html>

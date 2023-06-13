@@ -1,4 +1,4 @@
-// Version 2
+// Version 3
 
 var weightCalculator = {
     setup : function() {
@@ -14,6 +14,9 @@ var weightCalculator = {
             potentialCalculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
         } else if (document.title == "NBPSP - Momentum") {
             momentumCalculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
+        } else if (document.title == "NBPSP - Force Normal") {
+            normal0Calculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
+            normalCalculator.predefineMass(document.getElementById('out1').innerHTML, Calculate);
         }
     }
 }
@@ -102,3 +105,37 @@ var centripetalCalculator = {
         document.getElementById('centripetal_out').innerHTML = (Math.round(100*Math.pow(parseFloat(document.getElementById("centripetal_velocity").value),2)/parseFloat(document.getElementById("centripetal_radius").value))/100).toString()+' <abbr title="Meters per second per second">m/s<sup>2</sup></abbr>';
     }
 }
+
+var normal0Calculator = {
+    setup : function() {
+        this.calculate();
+    },
+    predefineMass : function(M, Calculate) {
+        document.getElementById("normal0_mass").value = M.toString();
+        if (Calculate) {
+            this.calculate();
+        }
+    },
+    calculate : function() {
+        document.getElementById("normal0_out").innerHTML = (Math.round(100*parseFloat(document.getElementById("normal0_gravity").value)*parseFloat(document.getElementById("normal0_mass").value))/100).toString()+' <abbr title="Newtons">N</abbr>';
+    }
+}
+
+var normalCalculator = {
+    setup : function() {
+        this.calculate();
+        window.addEventListener("deviceorientation", function(event) {
+            document.getElementById("normal_theta").value = (Math.round(event.beta*10)/10).toString();
+        }, true);
+    },
+    predefineMass : function(M, Calculate) {
+        document.getElementById("normal_mass").value = M.toString();
+        if (Calculate) {
+            this.calculate();
+        }
+    },
+    calculate : function() {
+        document.getElementById("normal_out").innerHTML = (Math.round(100*parseFloat(document.getElementById("normal_gravity").value)*parseFloat(document.getElementById("normal_mass").value)*Math.cos((Math.PI/180)*(parseFloat(document.getElementById("normal_theta").value))))/100).toString()+' <abbr title="Newtons">N</abbr>';
+    }
+}
+
